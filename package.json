@@ -1,0 +1,26 @@
+{
+  "name": "jansetu",
+  "version": "1.0.0",
+  "description": "JANSETU: Bridging Citizens. Building Solutions. - Citizen Grievance Redressal and Urban Management Platform",
+  "scripts": {
+    "dev:server": "cd server && npm run dev",
+    "dev:client": "cd client && npm run dev",
+    "start:server": "cd server && npm start",
+    "seed": "cd server && npm run seed",
+    "test": "cd server && node tests/integration.test.js",
+    "build:client": "cd client && npm run build",
+    "install:all": "cd server && npm install && cd ../client && npm install"
+  },
+  "keywords": [
+    "civic-tech",
+    "governance",
+    "complaint-management",
+    "smart-city",
+    "full-stack",
+    "react",
+    "nodejs",
+    "mongodb"
+  ],
+  "author": "JANSETU Engineering Team",
+  "license": "ISC"
+}

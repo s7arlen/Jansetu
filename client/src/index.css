@@ -1,0 +1,80 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Noto Sans', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-display: 'Noto Sans Display', 'Noto Sans', system-ui, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  --color-gov-navy: #1B365D;
+  --color-gov-deep: #0C2340;
+  --color-gov-dark: #002B49;
+  --color-gov-saffron: #E65100;
+  --color-gov-saffron-light: #FF9933;
+  --color-gov-green: #138808;
+  --color-gov-green-dark: #0F6806;
+  --color-burgundy: #8F1238;
+  --color-canvas: #F4F6F9;
+  --color-card: #FFFFFF;
+  --color-main: #1B2533;
+  --color-muted: #526071;
+  --color-border: #D0D7DE;
+  --color-success: #138808;
+  --color-warning: #B45309;
+  --color-danger: #C5221F;
+}
+
+/* Official Government of India & UX4G Typography: Noto Sans */
+*,
+*::before,
+*::after,
+html,
+body,
+input,
+button,
+select,
+textarea,
+optgroup {
+  font-family: 'Noto Sans', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+/* Monospace restricted specifically to technical codes */
+code,
+pre,
+kbd,
+samp,
+.font-mono {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !important;
+}
+
+body {
+  background-color: var(--color-canvas);
+  color: var(--color-main);
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+}
+
+/* Mobile PWA touch & scroll optimizations */
+@media (max-width: 768px) {
+  body {
+    overscroll-behavior-y: contain;
+  }
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
